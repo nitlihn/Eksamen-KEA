@@ -1,52 +1,65 @@
 body {
-  font-family: 'Poppins', sans-serif;
-    margin: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
-img{
+.home img {
     max-width: 100%;
     max-height: 100%;
 }
 
+#menu {
+    font-size: 30px;
+    margin: 0px;
+    cursor: pointer;
+    text-align: end;
+    padding: 0px 20px 0px 0px;
+}
+
 /* The side navigation menu */
 .sidenav {
-  height: 100%;
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #C8C7AE;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s;
-  padding-top: 60px;
+    margin: 0px;
+    height: 100%;
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #C8C7AE;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
 }
+
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #F5F5E9;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F5F5E9;
+    display: block;
+    transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #8E8E74;
-}
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 0.1em;
+    color: #8E8E74;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    font-size: 36px;
+    width: 85%;
+    text-align: right;
+    padding: 0px 30px 0px 0px;
 }
+
+
+/*
+Home
+*/
 
 .home {
     display: flex;
@@ -59,7 +72,6 @@ img{
     width: 100%;
     height: 100%;
     background-color: #EBE2D1;
-    margin: 0.2em;
     padding: 1em;
     font-size: 3rem;
 }
@@ -67,26 +79,29 @@ img{
 /*About*/
 
 .about img {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 50%;
-    text-align: center;
+    width: 100%;
+    height: auto;
 }
 
-.about  {
+.about {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     justify-content: center;
 }
 
-.about div {
-    width: 30vw;
-    height: 30vw;
+.about .col {
+    flex-grow: 1;
+    flex-basis: 40%;
+    height: 70vw;
     background-color: #f1f1f1;
     margin: 0.88em;
-    padding: 2em;
+    padding: 2rem;
     font-size: 1rem;
+}
+
+#about_txt {
+    background-color: aqua;
 }
 
 /*Portfolio*/
@@ -195,8 +210,3 @@ input[type=submit]:hover {
     margin: 4vw;
     justify-content: center;
 }
-
-
-
-
-
