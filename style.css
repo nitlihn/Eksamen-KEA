@@ -1,69 +1,50 @@
-/* [ON BIG SCREEN] */
-/* Wrapper */
-#nav_wrapper {
-    display: flex;
-    position: sticky;
-    top: 0;
-    background: white;
-
+body {
+  font-family: "Lato", sans-serif;
 }
 
-#page-nav {
-    width: 100%;
-    text-align: right;
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #C8C7AE;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #F5F5E9;
+  display: block;
+  transition: 0.3s;
 }
 
-/* Hide Hamburger */
-#page-nav label,
-#hamburger {
-    display: none;
-    margin: 0;
-    padding: 0;
+.sidenav a:hover {
+  color: #8E8E74;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-/* Menu Items */
-#page-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
-#page-nav ul li {
-    display: inline-block;
-    padding: 1.5vw;
-    box-sizing: border-box;
-}
 
-#page-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
 
-/* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px) {
 
-    /* Show Hamburger */
-    #page-nav label {
-        display: inline-block;
-        color: black;
-        background: white;
-        font-style: normal;
-        font-size: 30px;
-        padding: 5px;
-    }
 
-    /* Break down menu items into vertical */
-    #page-nav ul li {
-        display: block;
-    }
 
-    /* Toggle show/hide menu on checkbox click */
-    #page-nav ul {
-        display: none;
-    }
 
-    #page-nav input:checked ~ ul {
-        display: block;
-    }
-}
