@@ -66,31 +66,25 @@ img{
 
 /*About*/
 
-.portrait img {
+.col img {
     max-height: 200px;
     max-width: 200px;
     border-radius: 50%;
+    text-align: center;
+    margin: 2em;
 }
 
-#about .sectionwrapper {
+#om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 1.2em
 }
 
-#about .col {
+#om .col {
     flex-basis: 500px;
     flex-grow: 1;
-    background: #F0F3F6;
-}
-
-#about h2 {
-    margin: 0.6em;
-}
-
-#about p {
-    margin: 1em;
-
+    background: #d7f2f2;
+    ;
 }
 
 /*Footer*/
