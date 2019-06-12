@@ -99,11 +99,12 @@ Home
     font-size: 1rem;
 }
 
-#about_txt {
-    background-color: aqua;
-}
-
 /*Portfolio*/
+
+.portfolio img {
+    width: 100%;
+    height: auto;
+}
 
 .portfolio {
     display: flex;
@@ -112,12 +113,12 @@ Home
     justify-content: center;
 }
 
-.portfolio div {
-    width: 30vw;
-    height: 30vw;
+.portfolio .col {
+    flex-grow: 1;
+    flex-basis: 40%;
     background-color: #f1f1f1;
     margin: 0.88em;
-    padding: 2em;
+    padding: 2rem;
     font-size: 1rem;
 }
 
