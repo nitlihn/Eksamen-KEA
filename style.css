@@ -94,9 +94,23 @@ img{
 
 /*Portfolio*/
 
-/*Contact*/
-/*Contact*/
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+}
 
+.portfolio div {
+    width: 30vw;
+    height: 30vw;
+    background-color: #f1f1f1;
+    margin: 6vw;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/*Contact*/
 /* Set the size of the div element that contains the map */
 #map {
     height: 400px;
