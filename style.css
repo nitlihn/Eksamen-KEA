@@ -66,30 +66,27 @@ img{
 
 /*About*/
 
-.col img {
-    max-height: 200px;
-    max-width: 200px;
+.about img {
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 50%;
     text-align: center;
-    margin: 2em;
 }
 
-.col_1 img{
-    text-align: center;
-    margin: em;
-}
-
-#om .sectionwrapper {
+.about  {
     display: flex;
     flex-wrap: wrap;
-    margin: 1.2em
+    background-color: white;
+    justify-content: center;
 }
 
-#om .col {
-    flex-basis: 500px;
-    flex-grow: 1;
-    background: #EEEBE4;
-    ;
+.about div {
+    width: 30vw;
+    height: 30vw;
+    background-color: #f1f1f1;
+    margin: 0.88em;
+    padding: 2em;
+    font-size: 1rem;
 }
 
 /*Portfolio*/
@@ -105,9 +102,9 @@ img{
     width: 30vw;
     height: 30vw;
     background-color: #f1f1f1;
-    margin: 6vw;
-    padding: 20px;
-    font-size: 30px;
+    margin: 0.88em;
+    padding: 2em;
+    font-size: 1rem;
 }
 
 /*Contact*/
