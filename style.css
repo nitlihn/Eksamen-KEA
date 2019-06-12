@@ -74,6 +74,11 @@ img{
     margin: 2em;
 }
 
+.col_1 img{
+    text-align: center;
+    margin: em;
+}
+
 #om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +88,7 @@ img{
 #om .col {
     flex-basis: 500px;
     flex-grow: 1;
-    background: #d7f2f2;
+    background: #EEEBE4;
     ;
 }
 
