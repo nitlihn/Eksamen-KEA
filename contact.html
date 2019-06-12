@@ -24,11 +24,42 @@
     <!-- Use any element to open the sidenav -->
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-    <div class="home">
-        <div>
-            <img src="img/splash_2.png" alt="splash">
+    <section id="contact">
+        <div class="sectionwrapper">
+            <div class="col">
+                <h3>Google Maps</h3>
+                <!--The div element for the map -->
+                <div id="map"></div>
+            </div>
+            <div class="col">
+                <div class="top">
+                    <h1>
+                        GET IN TOUCH
+                    </h1>
+                    <p>
+                        Please do contact me if you have any questions or if there's anything I can help you with. I would love to hear from you.
+                    </p>
+                    <p>
+                        Tel: +45 20412823 &#10072; Email: nitiyalihn@gmail.com
+                    </p>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+                        <form action="action_page.php">
+
+                            <input type="text" id="name" name="firstname" placeholder="Name">
+
+                            <input type="text" id="email" name="email" placeholder="Email">
+
+                            <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!--   Footer-->
     <footer class="footer">
@@ -67,6 +98,5 @@
             <p>&#169; Copyright 2019 - All Rights Reserved &#10072; Designed by Nitiya Lihn</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body></html>
