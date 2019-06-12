@@ -93,7 +93,6 @@ Home
 .about .col {
     flex-grow: 1;
     flex-basis: 40%;
-    height: 70vw;
     background-color: #f1f1f1;
     margin: 0.88em;
     padding: 2rem;
