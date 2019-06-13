@@ -122,6 +122,36 @@ Home
     font-size: 1rem;
 }
 
+.button {
+    width: 50%;
+    background-color: #BFC290;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    margin: 8px 4px;
+}
+
+.button:hover {
+    background-color: #8E8E74;
+}
+
+.col h1 {
+    margin: 0;
+}
+
+.col h2 {
+    margin: 0;
+}
+
+.col h3 {
+    margin: 0;
+}
+
 /*Contact*/
 /* Set the size of the div element that contains the map */
 #map {
