@@ -99,6 +99,10 @@ Home
     font-size: 1rem;
 }
 
+.about p {
+    line-height: 1.8rem;
+}
+
 /*Portfolio*/
 
 .portfolio img {
