@@ -15,22 +15,22 @@ body {
     height: 100vw;
     background-image: url(img/portfolio.png);
     background-size: cover;
-    background-position: 45% 0%;
-}
-
-@media (orientation: landscape) {
-    #home {
-        width: 100vw;
-        height: 56.25vw;
-        background-position: 25% 32%;
-    }
+    background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 500px) {
     #home {
         width: 100vw;
-        height: 56.25vw;
-        background-position: 25% 32%;
+        height: 91vh;
+        background-position: 40% 40%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #home {
+        width: 100vw;
+        height: 86.25vw;
+        background-position: 50% 50%;
     }
 }
 
@@ -152,8 +152,8 @@ Home
     flex-grow: 1;
     flex-basis: 40%;
     margin: 0.88rem;
-    padding: 2rem;
     font-size: 1rem;
+    padding: 2rem;
 }
 
 .portfolio #tema_1 {
@@ -178,7 +178,7 @@ Home
 }
 
 .portfolio #tema_3 {
-    background-image: url(img/lilla.png);
+    background-image: url(img/purple_flowers_2.png);
     background-color: white;
     background-size: cover;
 
@@ -364,16 +364,14 @@ input[type=submit]:hover {
 
 .item {
     font-size: 25px;
-    margin: 1rem;
+    margin: 1rem 1rem 0rem 1rem;
     color: #8E8E74;
 }
 
 .fa {
     width: 50px;
-    justify-content: center;
 }
 
 .copyright {
     font-size: 10px;
-    justify-content: center;
 }
