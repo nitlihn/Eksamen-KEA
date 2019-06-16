@@ -342,7 +342,7 @@ input[type=submit]:hover {
 
 .item {
     font-size: 25px;
-    margin: 2vw;
+    margin: 1rem;
     color: #8E8E74;
 }
 
@@ -353,6 +353,5 @@ input[type=submit]:hover {
 
 .copyright {
     font-size: 10px;
-    margin: 4vw;
     justify-content: center;
 }
