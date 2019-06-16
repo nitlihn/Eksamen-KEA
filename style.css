@@ -5,13 +5,21 @@ body {
     height: 100%;
 }
 
-.home img {
+/*.home img {
     max-width: 100%;
     max-height: 100%;
+}*/
+
+#home {
+    width: 100vw;
+    height: 100vw;
+    background-image: url(img/portfolio.png);
+    background-size: cover;
+    background-position: 45% 0%;
 }
 
 @media (orientation: landscape) {
-    .home {
+    #home {
         width: 100vw;
         height: 56.25vw;
         background-position: 25% 32%;
@@ -19,7 +27,7 @@ body {
 }
 
 @media only screen and (min-width: 500px) {
-    .home {
+    #home {
         width: 100vw;
         height: 56.25vw;
         background-position: 25% 32%;
