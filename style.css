@@ -134,9 +134,7 @@ Home
     font-size: 1rem;
 }
 
-.portfolio .theme_2{
-    background-color: blue;
-}
+
 
 .portfolio #tema_1_border {
     background-color: #303b45;
@@ -150,8 +148,13 @@ Home
 }
 
 .portfolio #tema_2 {
-    background-color: #0F2C4C;
-    opacity: .85;
+    background-image: url(img/blue.png);
+    background-color: white;
+    background-size: cover;
+}
+
+.portfolio .theme_2{
+    background-color: #0b1a4d;
 }
 
 .portfolio #tema_3 {
@@ -175,8 +178,8 @@ Home
 
 .button {
     width: 50%;
-    color: whitesmoke;
-    border: 2px solid whitesmoke;
+    color: black;
+    border: 2px solid black;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -214,17 +217,17 @@ Home
 
 .col h1 {
     margin: 0;
-    color: white;
+    color: black;
 }
 
 .col h2 {
     margin: 0;
-    color: white;
+    color: black;
 }
 
 .col h3 {
     margin: 0;
-    color: white;
+    color: black;
 }
 
 
