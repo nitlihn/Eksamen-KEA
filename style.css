@@ -29,11 +29,28 @@ body {
     }
 }
 
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
 #menu {
     font-size: 30px;
     margin: 0px;
     text-align: end;
-    padding: 10px 20px 0px 0px;
+    padding: 4px 15px 0px 0px;
+}
+
+/*Logo*/
+#container_logo {
+    width: 150px;
+    height:15px;
+    background-image: url(img/logo.png);
+    background-position: top;
+    background-size: 100%;
+    padding: 1rem;
+    margin-left: 0.7rem;
+    margin-top: 0.3rem;
 }
 
 /* The side navigation menu */
@@ -72,16 +89,7 @@ body {
     font-size: 36px;
     width: 85%;
     text-align: right;
-    padding: 0px 30px 0px 0px;
-}
-
-/*Logo*/
-#container_logo {
-    width: 40px;
-    height: 40px;
-    background-image: url(img/dark_logo_transparent_background.png);
-    background-size: 100%;
-    padding: 5px;
+    padding: 0px 30px 0px 20px;
 }
 
 
@@ -151,13 +159,21 @@ Home
 .portfolio .col_inside {
     height: 100%;
 }
+
 .portfolio .col {
-    height: 60vh;
+    min-height: 65vh;
     flex-grow: 1;
     flex-basis: 40%;
     margin: 0.88rem;
     font-size: 1rem;
     padding: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .portfolio .col {
+        height: auto;
+        min-height: 60vh;
+    }
 }
 
 .portfolio #tema_1 {
@@ -170,6 +186,9 @@ Home
     background-color: #A3BFD9;
 }
 
+.portfolio p {
+    margin: 1rem;
+}
 
 .portfolio #tema_2 {
     background-image: url(img/gul.png);
