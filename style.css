@@ -75,6 +75,15 @@ body {
     padding: 0px 30px 0px 0px;
 }
 
+/*Logo*/
+#sprite_logo {
+    width: 40px;
+    height: 40px;
+    background-image: url(Billeder/logo_white_background.jpg);
+    background-size: 100%;
+    padding: 5px;
+}
+
 
 /*
 Home
