@@ -76,10 +76,10 @@ body {
 }
 
 /*Logo*/
-#sprite_logo {
+#container_logo {
     width: 40px;
     height: 40px;
-    background-image: url(Billeder/logo_white_background.jpg);
+    background-image: url(img/dark_logo_transparent_background.png);
     background-size: 100%;
     padding: 5px;
 }
