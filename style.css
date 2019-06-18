@@ -179,6 +179,15 @@ Home
     left: 0;
 }
 
+.portfolio .blomst_1{
+     width: 20rem;
+    height: 15rem;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 @media only screen and (max-width: 500px) {
     .portfolio .col {
         height: auto;
@@ -204,8 +213,8 @@ Home
     opacity: 0;
 }
 
+
 .portfolio .picture_box {
-    background-image: url(img/POPART.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -217,6 +226,16 @@ Home
     z-index: 1;
     transition: .75s ease;
 }
+
+.portfolio #pic_1{
+    background-image: url(img/POPART.png);
+}
+
+.portfolio #pic_2{
+    background-image: url(img/philip.png);
+}
+
+
 
 .portfolio #tema_2 {
     background-image: url(img/gul.png);
