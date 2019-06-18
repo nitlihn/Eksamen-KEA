@@ -113,9 +113,11 @@ Home
 
 /*About*/
 
-.about img {
-    width: 100%;
-    height: auto;
+.about .pic_about {
+    background-image: url(img/new_story.png);
+    background-color: white;
+    background-size: cover;
+    background-position: center
 }
 
 .about {
@@ -126,6 +128,7 @@ Home
 }
 
 .about .col {
+    min-height: 65vh;
     flex-grow: 1;
     flex-basis: 40%;
     background-color: #f1f1f1;
@@ -215,6 +218,10 @@ Home
     background-color: #A3BFD9;
 }
 
+.portfolio #tema_1_border {
+    background-color: #A3BFD9;
+}
+
 .portfolio p {
     margin: 1rem;
 }
@@ -234,7 +241,7 @@ Home
     top: 0;
     left: 0;
     z-index: 1;
-    transition: 1s ease;
+    transition: s ease;
 }
 
 .portfolio .text_box{
