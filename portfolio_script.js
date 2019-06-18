@@ -5,13 +5,20 @@ let oldTheme;
 const themes = [".theme_1", ".theme_2", ".theme_3", ".theme_4"];
 
 function sidenVises() {
-    // Queryselector på burger menu
-    // Kalder function show menu
-
-    document.querySelector("#btn1").addEventListener("click", function() { updateTheme(1) });
-    document.querySelector("#btn2").addEventListener("click", function() { updateTheme(2) });
-    document.querySelector("#btn3").addEventListener("click", function() { updateTheme(3) });
-    document.querySelector("#btn4").addEventListener("click", function() { updateTheme(4) });
+    document.querySelector("#btn1").addEventListener("click", function () {
+        updateTheme(1)
+    });
+    document.querySelector("#btn2").addEventListener("click", function () {
+        updateTheme(2)
+    });
+    document.querySelector("#btn3").addEventListener("click", function () {
+        updateTheme(3)
+    });
+    document.querySelector("#btn4").addEventListener("click", function () {
+        updateTheme(4)
+    });
+    document.querySelector(".hover_item").addEventListener("mouseover", mouseOver);
+    document.querySelector(".hover_item").addEventListener("mouseout", mouseOut);
 }
 
 function updateTheme(number) {
@@ -25,4 +32,13 @@ function updateTheme(number) {
     });
     document.querySelector("#btn"+number).classList.add("button_active");
 
+}
+
+function mouseOver() {
+    document.querySelector(".picture_box").classList.remove("hover_effect");
+}
+
+
+function mouseOut() {
+    document.querySelector(".picture_box").classList.add("hover_effect");
 }

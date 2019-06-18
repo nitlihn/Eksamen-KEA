@@ -67,7 +67,7 @@ body {
     overflow-x: hidden;
     /* Disable horizontal scroll */
     transition: 0.5s;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* The navigation menu links */
@@ -161,6 +161,7 @@ Home
 }
 
 .portfolio .col {
+    position: relative;
     min-height: 65vh;
     flex-grow: 1;
     flex-basis: 40%;
@@ -169,10 +170,13 @@ Home
     padding: 2rem;
 }
 
-.portfolio .col img{
-    width: 300px;
-    height: 200px;
-    opacity: 0.4
+.portfolio .col .blomst_baggrund{
+    width: 20rem;
+    height: 15rem;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @media only screen and (max-width: 500px) {
@@ -194,6 +198,24 @@ Home
 
 .portfolio p {
     margin: 1rem;
+}
+
+.hover_effect{
+    opacity: 0;
+}
+
+.portfolio .picture_box {
+    background-image: url(img/POPART.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .75s ease;
 }
 
 .portfolio #tema_2 {
@@ -228,8 +250,19 @@ Home
     background-size: cover;
 }
 
+.portfolio .text_leftbox {
+    padding: 10px;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: center;
+}
+
 .button {
-    width: 50%;
+    width: 40%;
     color: black;
     border: 2px solid black;
     padding: 16px 32px;
@@ -295,8 +328,7 @@ Home
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-
-    z-index: 1;
+    z-index: 2;
 
 }
 
