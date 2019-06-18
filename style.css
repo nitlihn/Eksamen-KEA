@@ -235,6 +235,14 @@ Home
     background-image: url(img/philip.png);
 }
 
+.portfolio #pic_3{
+    background-image: url(img/without_background_white.png);
+}
+
+.portfolio #pic_4{
+    background-image: url(img/native_app.png);
+}
+
 
 
 .portfolio #tema_2 {
