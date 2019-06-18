@@ -49,7 +49,7 @@ body {
     background-position: top;
     background-size: 100%;
     padding: 1rem;
-    margin-left: 0.7rem;
+    margin-left: 1.2rem;
     margin-top: 0.3rem;
 }
 
@@ -172,7 +172,7 @@ Home
 .portfolio .col img{
     width: 300px;
     height: 200px;
-    opacity: 0.4;
+    opacity: 0.4
 }
 
 @media only screen and (max-width: 500px) {
