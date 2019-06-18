@@ -37,9 +37,9 @@ function updateTheme(number) {
 function mouseOver() {
     document.querySelectorAll(".picture_box").forEach(function(pic) {pic.classList.remove("hover_effect");
     });
+     document.querySelectorAll(".text_box").forEach(function(pic) {pic.classList.add("hover_effect");
+    });
 
-
-        //.classList.remove("hover_effect");
 }
 
 
@@ -47,5 +47,6 @@ function mouseOut() {
 
      document.querySelectorAll(".picture_box").forEach(function(pic) {pic.classList.add("hover_effect");
     });
-    //document.querySelector(".picture_box").classList.add("hover_effect");
+    document.querySelectorAll(".text_box").forEach(function(pic) {pic.classList.remove("hover_effect");
+    });
 }

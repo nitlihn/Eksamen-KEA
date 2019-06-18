@@ -225,7 +225,7 @@ Home
 
 
 .portfolio .picture_box {
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
@@ -234,7 +234,11 @@ Home
     top: 0;
     left: 0;
     z-index: 1;
-    transition: .75s ease;
+    transition: 1s ease;
+}
+
+.portfolio .text_box{
+    transition: .001s ease;
 }
 
 .portfolio #pic_1{
@@ -246,7 +250,7 @@ Home
 }
 
 .portfolio #pic_3{
-    background-image: url(img/without_background_white.png);
+    background-image: url(img/bondegarden.png);
 }
 
 .portfolio #pic_4{
