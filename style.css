@@ -171,22 +171,31 @@ Home
 }
 
 .portfolio .col .blomst_baggrund{
-    width: 20rem;
-    height: 15rem;
     opacity: 0.5;
     position: absolute;
+}
+
+.portfolio #blomst_1{
+     width: 20rem;
+    height: 15rem;
     bottom: 0;
     left: 0;
 }
 
-.portfolio .blomst_1{
-     width: 20rem;
-    height: 15rem;
-    opacity: 0.5;
-    position: absolute;
+.portfolio #blomst_2{
+     width: 22rem;
+    height: 20rem;
     bottom: 0;
     right: 0;
 }
+
+.portfolio #blomst_3{
+     width: 22rem;
+    height: 20rem;
+    top: 0;
+    right: 0;
+}
+
 
 @media only screen and (max-width: 500px) {
     .portfolio .col {

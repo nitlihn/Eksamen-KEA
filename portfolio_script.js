@@ -17,8 +17,8 @@ function sidenVises() {
     document.querySelector("#btn4").addEventListener("click", function () {
         updateTheme(4)
     });
-    document.querySelector(".hover_item").addEventListener("mouseover", mouseOver);
-    document.querySelector(".hover_item").addEventListener("mouseout", mouseOut);
+    document.querySelectorAll(".hover_item").forEach(function(item) {item.addEventListener("mouseover", mouseOver)});
+    document.querySelectorAll(".hover_item").forEach(function(item) {item.addEventListener("mouseout", mouseOut)});
 }
 
 function updateTheme(number) {
@@ -35,10 +35,17 @@ function updateTheme(number) {
 }
 
 function mouseOver() {
-    document.querySelector(".picture_box").classList.remove("hover_effect");
+    document.querySelectorAll(".picture_box").forEach(function(pic) {pic.classList.remove("hover_effect");
+    });
+
+
+        //.classList.remove("hover_effect");
 }
 
 
 function mouseOut() {
-    document.querySelector(".picture_box").classList.add("hover_effect");
+
+     document.querySelectorAll(".picture_box").forEach(function(pic) {pic.classList.add("hover_effect");
+    });
+    //document.querySelector(".picture_box").classList.add("hover_effect");
 }
