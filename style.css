@@ -200,6 +200,13 @@ Home
     right: 0;
 }
 
+.portfolio #blomst_4{
+     width: 22rem;
+    height: 20rem;
+    top: 0;
+    right: 0;
+}
+
 
 @media only screen and (max-width: 500px) {
     .portfolio .col {
