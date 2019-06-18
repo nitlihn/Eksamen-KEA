@@ -329,6 +329,13 @@ Home
     background-color: lightblue;
 }
 
+@media only screen and (max-width: 500px) {
+    #map img {
+        height: auto;
+        min-height: 60vh;
+    }
+}
+
 #contact .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
